@@ -23,3 +23,19 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+window.addEventListener('click', function (e) {
+    if(e.target != hamburger && e.target !== navMenu) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+});
+
+// Dark Mode
+const checkbox = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+
+checkbox.addEventListener('click', function (){ 
+    // const html: HTMLHtmlElement
+    checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+});

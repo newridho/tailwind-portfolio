@@ -7,10 +7,10 @@
     <title>Tailwind Folio</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="selection:bg-teal-200 selection:text-slate-800 overflow-x-hidden">
+<body class="selection:bg-teal-200 selection:text-slate-800 overflow-x-hidden dark:bg-slate-800">
 
     <!-- Navbar Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-transparent dark:bg-slate-800 dark:bg-opacity-50 absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -23,22 +23,34 @@
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white max-w-[250px] w-full shadow-lg rounded-lg right-4 top-full lg:max-w-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:shadow-lg dark:shadow-teal-100/40 lg:dark:shadow-none dark:bg-slate-800 max-w-[250px] w-full shadow-lg rounded-b-lg right-4 top-full lg:max-w-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#hero" class="text-base text-slate-800 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Beranda</a>
+                                <a href="#hero" class="text-base text-slate-800 dark:text-white font-semibold py-2 mx-8 flex group-hover:text-teal-500">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-slate-800 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Tentang Saya</a>
+                                <a href="#about" class="text-base text-slate-800 dark:text-white font-semibold py-2 mx-8 flex group-hover:text-teal-500">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#edu" class="text-base text-slate-800 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Pendidikan</a>
+                                <a href="#edu" class="text-base text-slate-800 dark:text-white font-semibold py-2 mx-8 flex group-hover:text-teal-500">Pendidikan</a>
                             </li>
                             <li class="group">
-                                <a href="#exp" class="text-base text-slate-800 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Pengalaman</a>
+                                <a href="#exp" class="text-base text-slate-800 dark:text-white font-semibold py-2 mx-8 flex group-hover:text-teal-500">Pengalaman</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-slate-800 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Kontak</a>
+                                <a href="#contact" class="text-base text-slate-800 dark:text-white font-semibold py-2 mx-8 flex group-hover:text-teal-500">Kontak</a>
+                            </li>
+                            <li class="flex items-center py-2">
+                                <div class="flex mx-8">
+                                    <span class="text-sm text-slate-400 dark:text-slate-100 mr-2">light</span>
+                                    <input type="checkbox" id="dark-toggle" class="hidden">
+                                    <label for="dark-toggle">
+                                        <div class="w-12 h-5 bg-slate-500 dark:bg-teal-400 dark:ring-2 dark:ring-teal-100 dark:ring-inset cursor-pointer rounded-full flex items-center py-3 px-1">
+                                            <div class="w-4 h-4 bg-white dark:bg-teal-100 rounded-full toggle-c transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="text-sm text-slate-400 dark:text-slate-100 ml-2">dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -53,9 +65,9 @@
         <div class="container">
             <div class="flex flex-wrap ">
                 <div class="w-full self-center p-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-teal-500 md:text-xl selection:bg-white selection:text-teal-500">Halo Semua ✌, saya <span class="block font-bold text-4xl text-slate-900 selection:text-slate-800  mt-1 md:text-5xl">Ai Hayasaca</span></h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5">Anime Character & <span class="text-slate-800">Dancer</span></h2>
-                    <p class="font-medium text-slate-500 mb-10 leading-relaxed lg:2xl">Lorem Ipsum is simply <span class="font-bold text-slate-800">dummy text</span> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-bold text-slate-800">dummy text</span> ever since the 1500s</p>
+                    <h1 class="text-base font-semibold text-teal-500 dark:text-teal-300 md:text-xl select-none">Halo Semua ✌, saya <span class="block font-bold text-4xl text-slate-900 dark:text-white py-2 md:text-5xl">Ai Hayasaca</span></h1>
+                    <h2 class="font-medium text-slate-500 dark:text-slate-100 text-lg mb-5">Anime Character & <span class="text-slate-800 dark:text-slate-50">Dancer</span></h2>
+                    <p class="font-medium text-slate-500 dark:text-slate-100 mb-10 leading-relaxed lg:2xl">Lorem Ipsum is simply <span class="font-bold text-slate-800 dark:text-teal-200">dummy text</span> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-bold text-slate-800 dark:text-teal-200">dummy text</span> ever since the 1500s</p>
 
                     <a href="#" class="text-base font-semibold text-white bg-teal-500 py-3 px-8 rounded-full hover:shadow hover:bg-teal-400 transition duration-300 ease-in-out select-none">Hubungi Saya</a>
                 </div> 
