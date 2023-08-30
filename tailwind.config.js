@@ -17,7 +17,9 @@ module.exports = {
       screens: {
         '2xl': '1320px',
       },
-      colors: {},
+      colors: {
+        'dark': '#0f172a',
+      },
     },
   },
   plugins: [],
