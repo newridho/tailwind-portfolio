@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Folio</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class="selection:bg-teal-200 selection:text-slate-800 dark:bg-slate-800">
 
@@ -23,7 +23,7 @@
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:bg-slate-800 dark:shadow-lg dark:shadow-teal-100/40 lg:dark:shadow-none max-w-[250px] w-full shadow-lg rounded-b-lg right-4 top-full lg:max-w-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:shadow-lg dark:shadow-teal-100/40 lg:dark:shadow-none max-w-[250px] w-full shadow-lg rounded-b-lg right-4 top-full lg:max-w-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex lg:bg-transparent lg:dark:bg-transparent ">
                             <li class="group">
                                 <a href="#hero" class="text-base text-slate-800 dark:text-white lg:dark:text-teal-300 font-semibold py-2 mx-8 flex group-hover:text-teal-500">Beranda</a>
@@ -148,7 +148,7 @@
     <!-- About me Section End -->
 
     <!-- Background Education Start -->
-    <section id="edu" class="bg-teal-50 dark:bg-dark py-24">
+    <section id="edu" class="bg-teal-50 py-24">
         <div class="container">
             <div class="w-full p-4">
                 <div class="mx-auto lg:max-w-full text-center">
@@ -253,9 +253,9 @@
                 <div class="mx-auto mb-16 max-w-xl text-center">
                     <h1 class="mx-auto text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 dark:text-slate-100">Pengalaman Saya</h1>
                 </div>
-                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8  !dark:bg-slate-100">
                     <div class="h-[300px] w-full aspect-[4/3] md:aspect-[3/4] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-md group">
-                        <div class="w-full h-full bg-[url('../dist/images/exp1.png')] bg-cover bg-center group-hover:mix-blend-multiply">
+                        <div class="w-full h-full bg-[url('../dist/images/exp1.png')] bg-cover bg-center group-hover:mix-blend-multiply dark:group-hover:mix-blend-normal">
                             <div class="hidden w-full h-full bg-teal-300 bg-opacity-80 group-hover:flex flex-wrap">
                                 <div class="w-1/2 self-end mx-auto">
                                     <h1 class="p-4 text-center text-md font-bold tracking-wider border-b-4 rounded-lg border-white text-white">Opera Negara Wina, 1912</h1>
@@ -278,8 +278,8 @@
                         </div>
                     </div>
                     <div class="h-[300px] w-full aspect-[4/3] md:aspect-[3/4] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-md group">
-                        <div class="w-full h-full bg-[url('../dist/images/exp2.png')] bg-cover bg-center group-hover:mix-blend-multiply">
-                            <div class="hidden w-full h-full bg-teal-300 bg-opacity-80 group-hover:flex flex-wrap">
+                        <div class="w-full h-full bg-[url('../dist/images/exp2.png')] bg-cover bg-center group-hover:mix-blend-multiply dark:group-hover:mix-blend-normal">
+                            <div class="hidden w-full h-full bg-teal-300 dark:tw-bg-teal-300 bg-opacity-80 group-hover:flex flex-wrap">
                                 <div class="w-1/2 self-end mx-auto">
                                     <h1 class="p-4 text-center text-md font-bold tracking-wider border-b-4 rounded-lg border-white text-white">istana Belvedere</h1>
                                 </div>
@@ -301,7 +301,7 @@
                         </div>
                     </div>
                     <div class="h-[300px] w-full aspect-[4/3] md:aspect-[3/4] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-md group">
-                        <div class="w-full h-full bg-[url('../dist/images/exp3.png')] bg-cover bg-center group-hover:mix-blend-multiply">
+                        <div class="w-full h-full bg-[url('../dist/images/exp3.png')] bg-cover bg-center group-hover:mix-blend-multiply dark:group-hover:mix-blend-normal">
                             <div class="hidden w-full h-full bg-teal-300 bg-opacity-80 group-hover:flex flex-wrap">
                                 <div class="w-1/2 self-end mx-auto">
                                     <h1 class="p-4 text-center text-md font-bold tracking-wider border-b-4 rounded-lg border-white text-white">Fromelles, 1916</h1>

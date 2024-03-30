@@ -1038,20 +1038,20 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-\[url\(\'\.\.\/dist\/images\/1st\.png\'\)\] {
-  background-image: url('../dist/images/1st.png');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/2nd\.png\'\)\] {
-  background-image: url('../dist/images/2nd.png');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/3rd\.png\'\)\] {
-  background-image: url('../dist/images/3rd.png');
-}
-
 .bg-\[url\(\'\.\.\/dist\/images\/coffee\.png\'\)\] {
   background-image: url('../dist/images/coffee.png');
+}
+
+.bg-\[url\(\'\.\.\/dist\/images\/cv1\.png\'\)\] {
+  background-image: url('../dist/images/cv1.png');
+}
+
+.bg-\[url\(\'\.\.\/dist\/images\/cv2\.png\'\)\] {
+  background-image: url('../dist/images/cv2.png');
+}
+
+.bg-\[url\(\'\.\.\/dist\/images\/cv3\.png\'\)\] {
+  background-image: url('../dist/images/cv3.png');
 }
 
 .bg-\[url\(\'\.\.\/dist\/images\/exp1\.png\'\)\] {
@@ -1064,18 +1064,6 @@ video {
 
 .bg-\[url\(\'\.\.\/dist\/images\/exp3\.png\'\)\] {
   background-image: url('../dist/images/exp3.png');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/cv3\.png\'\)\] {
-  background-image: url('../dist/images/cv3.png');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/cv1\.png\'\)\] {
-  background-image: url('../dist/images/cv1.png');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/cv2\.png\'\)\] {
-  background-image: url('../dist/images/cv2.png');
 }
 
 .bg-cover {
@@ -1378,11 +1366,9 @@ body {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
-.navbar-fixed ul {
-  --tw-backdrop-blur: blur(0);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
+/* .navbar-fixed ul {
+    @apply backdrop-blur-none;
+}     */
 
 /* Hamburger Menu */
 
@@ -1719,36 +1705,18 @@ body {
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-sky-800) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-sky-400) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-teal-300) {
   --tw-bg-opacity: 1;
   background-color: rgb(94 234 212 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-red-600) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:bg-opacity-50) {
   --tw-bg-opacity: 0.5;
-}
-
-:is(.dark .dark\:bg-opacity-40) {
-  --tw-bg-opacity: 0.4;
-}
-
-:is(.dark .dark\:to-white) {
-  --tw-gradient-to: #fff var(--tw-gradient-to-position);
-}
-
-:is(.dark .dark\:text-dark) {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-slate-100) {
@@ -1791,10 +1759,6 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:bg-blend-normal) {
-  background-blend-mode: normal;
-}
-
 :is(.dark .dark\:shadow-lg) {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1826,18 +1790,12 @@ body {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:hover\:bg-teal-300:hover) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-:is(.dark .group:hover .dark\:group-hover\:bg-white) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 :is(.dark .group:hover .dark\:group-hover\:mix-blend-normal) {
   mix-blend-mode: normal;
+}
+
+:is(.dark .group:hover .dark\:group-hover\:mix-blend-overlay) {
+  mix-blend-mode: overlay;
 }
 
 @media (min-width: 640px) {
@@ -2062,10 +2020,6 @@ body {
     background-color: transparent;
   }
 
-  .lg\:bg-none {
-    background-image: none;
-  }
-
   .lg\:p-4 {
     padding: 1rem;
   }
@@ -2097,11 +2051,6 @@ body {
 
   :is(.dark .lg\:dark\:bg-transparent) {
     background-color: transparent;
-  }
-
-  :is(.dark .lg\:dark\:bg-sky-400) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(56 189 248 / var(--tw-bg-opacity));
   }
 
   :is(.dark .lg\:dark\:text-slate-200) {
