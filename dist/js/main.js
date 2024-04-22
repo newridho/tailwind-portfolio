@@ -1,3 +1,5 @@
+// import { Modal } from 'flowbite';
+
 // Navbar Fixed
 window.onscroll = function() {
     const header = document.querySelector('header');
@@ -14,6 +16,7 @@ window.onscroll = function() {
         toTop.classList.add('hidden');
     }
 };
+
 
 //Hamburger Menu
 const hamburger = document.querySelector('#hamburger');
